@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form1 {
+  background-color: gray;
+  width: 17rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 16rem;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.email-input {
+  width: min-content;
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.password-input {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.btn-input {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  position: absolute;
+  background-color: rgb(245, 135, 135);
+  width: 12rem;
+  color: red;
+  height: 3rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+  border-radius: 4px;
+  border: 1px solid black;
+  text-align: center;
+  transform: rotateX(90deg);
+  transition: 1s ease-in-out;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.wrap {
+  margin-top: 20px;
+}
+
+.caught-error {
+  transform: rotateX(0deg);
+  transition: 1s ease-in-out;
+}
+
+label {
+  font-size: 14px;
+}
